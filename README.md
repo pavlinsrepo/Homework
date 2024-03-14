@@ -117,8 +117,8 @@ This repositories was done for my homework on Monday.
 
 
 ---
-
-
+## My Wordpress Blog
+![Screenshot 2024-03-12 180032](https://github.com/pavlinsrepo/Homework/assets/163166111/4722fee0-d153-4f35-8677-843b738fdbb7)
 
 
 
