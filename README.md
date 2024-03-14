@@ -3,7 +3,6 @@ This repositories was done for my homework on Monday.
 
 ## Requirements
 - AWS account
-- Kubectl
 
 ## Creating the Cluster
 - To make an EKS cluster, we need to have an AWS account, after we make an AWS account, we need to look for the service named EKS.
