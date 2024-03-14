@@ -91,6 +91,7 @@ This repositories was done for my homework on Monday.
 - When we update the kubeconfig file, it's time to put our yaml manifest contents, we will first put our mysql-secret manifest in mysql-secret file.
 - Then apply manifest files with `kubectl apply command -f mysql-secret`
 <img width="485" alt="applying the secret" src="https://github.com/pavlinsrepo/Homework/assets/163166111/62c6274f-5e5a-48f1-ad9f-9ab903e6bb7e">
+
 ---
 
 - The next manifest yaml content that we need to put in a file is the mysql database and the service that is responsible for the traffic to the mysql database
