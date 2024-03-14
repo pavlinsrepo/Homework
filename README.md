@@ -119,8 +119,9 @@ This repositories was done for my homework on Monday.
 ---
 
 ## My wordpress blog.
-<img width="1269" alt="Screenshot 2024-03-12 1800322" src="https://github.com/pavlinsrepo/Homework/assets/163166111/730df427-2ec7-4bda-9446-9f8baf05aea1">
-![Screenshot 2024-03-12 175725](https://github.com/pavlinsrepo/Homework/assets/163166111/d0edff8a-0dac-44de-b55c-99dd74a457e4)
+<img width="700" alt="Screenshot 2024-03-12 1800322" src="https://github.com/pavlinsrepo/Homework/assets/163166111/730df427-2ec7-4bda-9446-9f8baf05aea1">
+
+
 
 
 
