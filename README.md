@@ -118,8 +118,6 @@ This repositories was done for my homework on Monday.
 
 ---
 
-## My wordpress blog.
-<img width="700" alt="Screenshot 2024-03-12 1800322" src="https://github.com/pavlinsrepo/Homework/assets/163166111/730df427-2ec7-4bda-9446-9f8baf05aea1">
 
 
 
