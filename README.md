@@ -1,4 +1,6 @@
 # EKS Cluster with Wordpress and MySQL.
+![image](https://github.com/pavlinsrepo/Homework/assets/163166111/4e11b41c-576b-4a72-a09f-d2273f96b582)
+
 
 ## Prerequisites
 - AWS account
