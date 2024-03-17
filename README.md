@@ -1,27 +1,26 @@
 # EKS Cluster with Wordpress and MySQL.
-This repositories was done for my homework on Monday.
 
-## Requirements
+## Prerequisites
 - AWS account
 
 ## Creating the Cluster
-- To make an EKS cluster, we need to have an AWS account, after we make an AWS account, we need to look for the service named EKS.
+- Log into the AWS web console and open the EKS service.
 <img width="800" alt="Searching for k8s" src="https://github.com/pavlinsrepo/Homework/assets/163166111/8a6f8f88-11ad-4b08-a2bf-2d4bcd3ec3cb">
 
 ---
 
-- Once we have found the service, we need to make an EKS cluster through the "Create cluster" button.
+- Make a new EKS cluster through the "Create cluster" button.
 <img width="800" alt="starting to create a cluster" src="https://github.com/pavlinsrepo/Homework/assets/163166111/4442e0f0-3407-4ff3-9a35-fd1a469e5524">
 
 ---
 
-- Once we have clicked on the button, it will take us to the place where we can configure our cluster. To configure the cluster we first need to make an IAM role with permissions for it.
+- Clicking the button will take us to the place where we can configure our cluster. To configure the cluster we first need to make an IAM role with permissions for it.
 <img width="800" alt="creating the clister (configure cluster)" src="https://github.com/pavlinsrepo/Homework/assets/163166111/df2c526d-3942-4363-8f8f-565cc7784041">
 <img width="600" alt="creating a service role for the eks cluster " src="https://github.com/pavlinsrepo/Homework/assets/163166111/2d700625-5ff3-4adb-8d7c-959d309edad7">
 
 ---
 
-- When we want to make a user with permissions , role for services or groups of users with the same permissions, we do them through IAM (Identity and Access Management) service. In order to create a role for our eks cluster, we need to find an IAM service through the search engine and find the option to create roles in the access management section. Тhen click on the "Create a Role" button.
+- When we want to make a user with permissions, a role for services, groups of users with the same permissions, we do them through IAM (Identity and Access Management) service. In order to create a role for our EKS cluster, we need to find an IAM service through the search engine and find the option to create roles in the access management section. We should then click on the "Create a Role" button.
 <img width="800" alt="creating a role " src="https://github.com/pavlinsrepo/Homework/assets/163166111/c3f382e5-925a-4c24-ab16-eac37315fbbb">
 
 ---
@@ -31,8 +30,8 @@ This repositories was done for my homework on Monday.
 
 ---
 
-1. Then we choose what kind of permission to give to this role.
-2. We choose how to name the role and also what description to have.
+1. We should choose what kind of permission to give to this role.
+2. We should also choose how to name the role and also what description to have.
 3. We create the role through the "Create Role" button at the bottom.
 <img width="600" alt="selecting permisions" src="https://github.com/pavlinsrepo/Homework/assets/163166111/98330122-1eaf-47d7-923d-4ae78006d7db">
 <img width="600" alt="adding details" src="https://github.com/pavlinsrepo/Homework/assets/163166111/a28537c5-f069-45b1-a55e-9e4a26296a2b">
@@ -40,7 +39,7 @@ This repositories was done for my homework on Monday.
 
 ---
 
-- Then we go back to the configurator of our cluster and configure it to our liking.
+- After that we should go back to the configuration of our cluster and change it to our liking.
 <img width="600" alt="configuring the cluster" src="https://github.com/pavlinsrepo/Homework/assets/163166111/410c4c37-7933-4201-b895-764f721af713">
 <img width="600" alt="configuring the networking for the cluster" src="https://github.com/pavlinsrepo/Homework/assets/163166111/fc3f1ebc-cb5c-4f20-b0c2-d3b12c8ee7eb">
 <img width="600" alt="selecting add ons" src="https://github.com/pavlinsrepo/Homework/assets/163166111/c047d224-1dc7-4cfc-a9d5-de0bf57426dd">
@@ -53,16 +52,16 @@ This repositories was done for my homework on Monday.
 
 ---
 
-- Once our cluster is created, it will take us to the new page where our cluster dashboard is. It takes to wait 10-15 minutes for aws to create the cluster for us. Then we have to create a node-group that will represent our worker nodes.
+- Once our cluster is created, it will take us to the new page where our cluster dashboard is. We may have to wait a few minutes for AWS to create the cluster. Then we have to create a node-group that will represent our worker nodes.
 <img width="700" alt="dashboard when you create the cluster" src="https://github.com/pavlinsrepo/Homework/assets/163166111/4c2ab074-7ba2-49b0-9f36-196b5d3d1674">
 
 ---
 
-- When we want to create a node group, we go to the compute section below, and then click on the add node group button.
+- To create a node group, we should go to the compute section below, and then click on the add node group button.
 <img width="700" alt="making a node group" src="https://github.com/pavlinsrepo/Homework/assets/163166111/9da3560e-4b07-47ae-be0a-dbda5ca1c4c0">
 
 ---
-- To create a node group we will need a role from the IAM service, and for the role we will choose to be assigned to ec2 (We choose ec2 because our worker nodes will be ec2), these three permissions that I have shown are mandatory for our worker nodes to function.
+-  We will need a role from the IAM service, and for the role we will choose to be assigned to ec2 (We choose EC2 because our worker nodes will be EC2), these three permissions that I have shown are mandatory for our worker nodes to function.
 
 <img width="600" alt="node group role" src="https://github.com/pavlinsrepo/Homework/assets/163166111/b6937cfe-e9db-46dc-a213-6c77d7687871">
 <img width="600" alt="the type of permissions" src="https://github.com/pavlinsrepo/Homework/assets/163166111/9c8f5283-ba07-4d6c-89e7-56589be18a02">
@@ -106,12 +105,10 @@ This repositories was done for my homework on Monday.
 
 ---
 
-- The final step is to see the External IP of our LoadBalancer which еxposes WordPress, through this DNS name we access WordPress via the browser. When we open the browser we just type DNS name from our Loadbalancer in the search engine and access wordpress.
+- To access the Wordpress page in the browser, we should use the external IP of the load balancer as the URL we enter in the browser’s address field.
 <img width="788" alt="now type the following command to see the loadbalancers dns name" src="https://github.com/pavlinsrepo/Homework/assets/163166111/dbba78c0-920f-4659-bb8f-bc5bc8ff7c60">
 
 ---
-
-- If you see this page in your browser after you have put the dns name, then you have followed the steps correctly and it turned out perfectly. Congratulations.
 
 <img width="700" alt="congrats you made it" src="https://github.com/pavlinsrepo/Homework/assets/163166111/84728ce9-b835-4064-b64d-0c4b7c06d9d8">
 
