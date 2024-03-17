@@ -1,5 +1,5 @@
 # EKS Cluster with Wordpress and MySQL.
-![image](https://github.com/pavlinsrepo/Homework/assets/163166111/4e11b41c-576b-4a72-a09f-d2273f96b582)
+![1595366103178 (1)](https://github.com/pavlinsrepo/Homework/assets/163166111/eeb1dcfe-f590-40a5-9b4a-0dcfdd95365d)
 
 
 ## Prerequisites
